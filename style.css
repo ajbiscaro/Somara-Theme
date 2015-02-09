@@ -1,0 +1,327 @@
+/*
+Theme Name: Somara
+Description: Somara wordpress theme.
+Author: Ardel John S. Biscaro
+Author URI: http://www.ajbiscaro.com
+Version: 1.0
+*/
+
+@charset "UTF-8";
+
+/*** 
+Reset - taken from eric meyer with some added defaults 
+***/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+em { font-style: italic }
+strong { font-weight: bold }
+
+/*** 
+Remember to define focus styles! 
+***/
+:focus { outline: 0; }
+
+/***
+Remember to highlight inserts somehow! 
+***/
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/***
+Tables still need 'cellspacing="0"' in the markup 
+***/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*** 
+Some default classes 
+***/
+.left{ float:left; }
+.right { float:right; }
+.clear{ clear:both; }
+
+img.alignleft { float:left; margin:0 10px 10px 0; }
+img.alignright { float:right; margin:0 0 10px 10px; }
+
+.txt-center { text-align: center; }
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+
+/*** Clearfix ***/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
+*:first-child+html .clearfix { zoom: 1; }
+.clear { clear: both; }
+
+/*** 
+General Settings 
+***/
+body {
+	background: #ffffff;
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+h1,h2,h3,h4,h5,h6 { 
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+p { 
+	margin: 0px 0px 15px 0px; 
+}
+
+/***
+Typography
+***/
+h2 {
+	color: #fff;
+	font-size: 25px;
+}
+
+/***
+Container
+***/
+.container {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 835px;
+}
+
+/*** 
+Header 
+***/
+#masthead {
+	background: #2c2520;
+	padding-top: 46px;
+}
+.logo {
+	float: left;
+}
+.logo  img {
+	width: 100%;
+}
+/*** 
+Header - CLIENT LOGIN
+***/
+.form {
+	float: right;
+	margin: 25px 30px 0px 0px;
+}
+p.title {
+	color: #eae7ba;
+	font-size: 12px;
+	margin-left: 78px;
+}
+.form label {
+	color: #eae7ba;
+	font-size: 11px;
+    float: left;
+    width: 50px;
+	margin: 5px 15px 0px 0px;
+	vertical-align: bottom;
+}
+.form  input[type=text], input[type=password] {
+	background: #392f2b;
+	border: 0px;
+	color: #eae7ba;
+	font-size: 11px;
+	padding: 5px 5px;
+	width: 129px;
+	margin: 0px 10px;
+}
+.form input[type=submit] {
+	background-color: #392f2b;
+	color: #eae7ba;
+	cursor: pointer;
+	border: 0px none;
+	font-size: 11px;
+	padding: 5px 0px;
+	width: 71px;
+}
+.form input[type=submit]:hover {
+    background-color: #483f3c;
+	cursor: pointer;
+	text-decoration: none;
+}
+.space-divide {
+	margin-bottom: 10px;
+}
+/*** 
+Header - TOP NAV
+***/
+.top-nav {
+	float: right;
+	padding-top: 60px;
+}
+.top-nav ul li {
+	display: inline;
+	font-size: 13px;
+	margin-right: 5px;
+}
+.top-nav ul li.last-menu {
+	margin-right: 30px;
+}
+.top-nav ul li a {
+	background: #392f2b;
+	color: #f8f8f8;
+	font-weight: bold;
+	line-height: 33px;
+	padding: 12px 16px;
+	text-decoration: none;
+}
+.top-nav ul li a:hover, .top-nav li.current a  {
+	background: #afaba5;
+	color: #050505;
+	cursor: pointer;
+}
+
+/*** 
+Main Content
+***/
+#main-content {
+	background: #392f2b;
+	padding: 30px 0px 42px 0px;
+}
+.teaser {
+	float: left;
+	margin: 40px 0px 50px 0px;
+	width: 240px;
+}
+.teaser p {
+	color: #fff;
+	font-size: 13px;
+}
+
+/*** 
+Main Content - Slider
+***/
+.teaser-slider {
+	float: right;
+	height: 238px;
+	margin-right: 0px;
+	width: 544px;
+}
+ul.bjqs-controls.v-centered li.bjqs-next a {
+    right: 0;
+	height: 48px;
+	width: 48px;
+	background: url(images/btn-right-slider.png) no-repeat;
+	margin-right: 15px;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+    left: 0;
+	height: 48px;
+	width: 48px;
+	background: url(images/btn-left-slider.png) no-repeat;
+	margin-left: 15px;
+}
+
+ul.bjqs-controls.v-centered li {
+	text-indent: -9999px;
+}
+
+/*** 
+Main Content - Service
+***/
+.service {
+	clear: both;
+	margin-top: 22px; 
+	color: #ffffff;	
+}
+.service-box {
+	float: left;
+	background: #2e2721;
+	border: 1px solid #28201a;
+	width: 232px; 
+	margin-top: 21px;
+	padding: 10px 16px 20px 16px;
+}
+.first-box {
+	margin-right: 18px;
+}
+.last-box {
+	float: right;
+}
+p.title {
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 17px 0px 10px;
+}
+p.subtitle {
+	color: #d8660d;	
+	font-size: 10px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.line-separator{
+	clear: both;
+	background: #afaba5;
+	border-bottom: 2px solid #afaba5;
+	margin-bottom: 15px;
+	width: 232px;
+}
+.service-box p {
+	font-size: 11px;
+	text-align: justify;
+	line-height: 17px;
+	width: 232px;
+}
+.service-box img {
+  float: right;
+}
+.service-box a {
+	background: #392f2b;
+	color: #eae7ba;
+	float: right;
+	font-size: 11px;
+	padding: 10px;
+	text-decoration: none;
+}
+.service-box  a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*** 
+Main Content - Sponsor
+***/
+.sponsor{
+	float: left;
+	padding: 17px 0 19px;
+}
+
+/*** 
+Footer
+***/
+#mastfoot {
+	background: #2c2520;
+	padding: 28px 0px 45px 0px;
+}
+#mastfoot p {
+	color: #ffffff;
+	font-size: 12px;
+	margin: 8px 0 8px;
+	text-align: center;
+}
+#mastfoot a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#mastfoot a:hover {
+	text-decoration: underline;
+}
+.line-separator-footer{
+	background: #afaba5;
+	border-bottom: 2px solid #afaba5;
+	margin: 0px auto;
+	width: 320px;
+}
+#mastfoot p.copyright {
+	font-size: 11px;
+}
+
